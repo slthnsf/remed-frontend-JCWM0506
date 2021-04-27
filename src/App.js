@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Switch, Route } from 'react-router'
+import NavbarComp from './component/navbar';
+import LandingPage from './pages/landingPage';
+import ProductManagement from './pages/productManagement';
+import { getProductAction } from './actions'
+import { connect } from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {  }
+  }
+
+  componentDidMount() {
+    this.props.getProductAction()
+  }
+  render() { 
+    return ( 
+      <div>
+        <NavbarComp />
+        <Switch>
+          <Route path="/" component={LandingPage} exact />
+          <Route path="/product-management" component={ProductManagement}/>
+        </Switch>
+      </div>
+     );
+  }
 }
-
-export default App;
+ 
+export default connect(null, {getProductAction})(App);

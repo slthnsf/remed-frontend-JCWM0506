@@ -1,14 +1,54 @@
 {
-    "products" : [
-        {
-            "id": 1,
-            "date": "2021-01-12T03:20:41.718Z",
-            "name": "Meja Lipat",
-            "serial": 1682697,
-            "stock": 6,
-            "category": "Furniture",
-            "price": 567890,
-            "status": "avaiable"
-          }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "date": "2021-01-12T03:20:41.718Z",
+      "name": "Meja Lipat",
+      "serial": 1682697,
+      "stock": "6",
+      "category": "Furniture",
+      "price": 567890,
+      "status": "available"
+    },
+    {
+      "date": "2021/4/27",
+      "name": "Lemari Pakaian",
+      "serial": 794253,
+      "stock": 0,
+      "category": "Furniture",
+      "price": 2000000,
+      "status": "non-available",
+      "id": 2
+    },
+    {
+      "date": "2021/4/27",
+      "name": "Iphone XR",
+      "serial": 1142154,
+      "stock": 23,
+      "category": "Handphone",
+      "price": 8700000,
+      "status": "available",
+      "id": 3
+    },
+    {
+      "date": "2021/4/27",
+      "name": "Lampu Meja",
+      "serial": 1151043,
+      "stock": 12,
+      "category": "Furniture",
+      "price": 2100000,
+      "status": "available",
+      "id": 4
+    },
+    {
+      "date": "2021/4/27",
+      "name": "Lacoco Mask",
+      "serial": 1273511,
+      "stock": 0,
+      "category": "Beauty",
+      "price": 100000,
+      "status": "non-available",
+      "id": 5
+    }
+  ]
 }
